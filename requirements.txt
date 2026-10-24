@@ -2,4 +2,5 @@ fastapi
 uvicorn 
 sqlalchemy
 psycopg[binary]
-alembic
+alembic 
+pydantic-settings
