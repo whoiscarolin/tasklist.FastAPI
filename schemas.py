@@ -17,10 +17,15 @@ class Task(TaskCreate):
 
 
 class UserCreate(BaseModel):
-    email: EmailStr
-    password: str
+  email: EmailStr
+  password: str
 
 
 class UserOut(BaseModel):
-    id: int
-    email: EmailStr
+  id: int
+  email: EmailStr
+
+
+class TokenOut(BaseModel):
+  access_token: str
+  token_type: str = "bearer"

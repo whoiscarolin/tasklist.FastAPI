@@ -29,4 +29,3 @@ def decode_access_token(token: str) -> int:
       return int(payload["sub"])
   except (JWTError, KeyError, ValueError):
       raise HTTPException(status_code=401, detail="Invalid token")
-)

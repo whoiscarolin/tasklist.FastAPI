@@ -28,7 +28,6 @@ def register(
 
 
 @router.post("/login", response_model=TokenOut)
-@router.post("/login", response_model=UserOut)
 def login(
   payload: UserCreate,
   service: AuthService = Depends(get_auth_service),
